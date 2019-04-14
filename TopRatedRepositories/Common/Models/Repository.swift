@@ -26,6 +26,5 @@ struct Repository : Codable {
             stargazersCount = try values.decodeIfPresent(Int.self, forKey: .stargazersCount)
             name = try values.decodeIfPresent(String.self, forKey: .name)
             owner = try values.decodeIfPresent(Owner.self, forKey: .owner)
-           // owner = try Owner(from: decoder)
         }
 }

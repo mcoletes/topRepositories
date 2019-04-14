@@ -34,6 +34,10 @@
 		1DB374BD226128C200484E4C /* ReusableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB374BC226128C200484E4C /* ReusableCells.swift */; };
 		B80F367F0F298D15DF8C42C0 /* Pods_TopRatedRepositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7D866B1BE86FF6A62398F0 /* Pods_TopRatedRepositories.framework */; };
 		BE3BE54E1F9F801A2C4A0420 /* Pods_TopRatedRepositoriesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96D83EC5D66A9A53486030D /* Pods_TopRatedRepositoriesTests.framework */; };
+		C8725E212263DD93000C0172 /* TopRatedRepositoriesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8725E202263DD93000C0172 /* TopRatedRepositoriesViewControllerTests.swift */; };
+		C8725E242263EE6C000C0172 /* JsonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8725E232263EE6C000C0172 /* JsonLoader.swift */; };
+		C8725E282263F24A000C0172 /* topRepositories.json in Resources */ = {isa = PBXBuildFile; fileRef = C8725E262263F010000C0172 /* topRepositories.json */; };
+		C8725E2A2263F493000C0172 /* MockTopRatedRepositoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8725E292263F493000C0172 /* MockTopRatedRepositoriesInteractor.swift */; };
 		CD2E81762399CD65F08098C5 /* Pods_TopRatedRepositoriesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9046AD222C88E807F3F5E30C /* Pods_TopRatedRepositoriesUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +98,10 @@
 		9046AD222C88E807F3F5E30C /* Pods_TopRatedRepositoriesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopRatedRepositoriesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0823303FCF1B78A9DA3AA94 /* Pods-TopRatedRepositoriesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopRatedRepositoriesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TopRatedRepositoriesTests/Pods-TopRatedRepositoriesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC7D866B1BE86FF6A62398F0 /* Pods_TopRatedRepositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopRatedRepositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8725E202263DD93000C0172 /* TopRatedRepositoriesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedRepositoriesViewControllerTests.swift; sourceTree = "<group>"; };
+		C8725E232263EE6C000C0172 /* JsonLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonLoader.swift; sourceTree = "<group>"; };
+		C8725E262263F010000C0172 /* topRepositories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topRepositories.json; sourceTree = "<group>"; };
+		C8725E292263F493000C0172 /* MockTopRatedRepositoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTopRatedRepositoriesInteractor.swift; sourceTree = "<group>"; };
 		C96D83EC5D66A9A53486030D /* Pods_TopRatedRepositoriesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopRatedRepositoriesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -170,6 +178,9 @@
 		1D68AD37225F9F9600E65C07 /* TopRatedRepositoriesTests */ = {
 			isa = PBXGroup;
 			children = (
+				C8725E252263F004000C0172 /* Resources */,
+				C8725E222263EE58000C0172 /* Util */,
+				C8725E1F2263DD70000C0172 /* Snapshots Tests */,
 				1D68AD38225F9F9600E65C07 /* TopRatedRepositoriesTests.swift */,
 				1D68AD3A225F9F9600E65C07 /* Info.plist */,
 			);
@@ -323,6 +334,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C8725E1F2263DD70000C0172 /* Snapshots Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C8725E202263DD93000C0172 /* TopRatedRepositoriesViewControllerTests.swift */,
+				C8725E292263F493000C0172 /* MockTopRatedRepositoriesInteractor.swift */,
+			);
+			path = "Snapshots Tests";
+			sourceTree = "<group>";
+		};
+		C8725E222263EE58000C0172 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C8725E232263EE6C000C0172 /* JsonLoader.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		C8725E252263F004000C0172 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C8725E262263F010000C0172 /* topRepositories.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -354,6 +390,7 @@
 				1D68AD30225F9F9600E65C07 /* Sources */,
 				1D68AD31225F9F9600E65C07 /* Frameworks */,
 				1D68AD32225F9F9600E65C07 /* Resources */,
+				B20F349DB9D5AFCA159FE151 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -435,6 +472,7 @@
 				1D68AD2E225F9F9600E65C07 /* LaunchScreen.storyboard in Resources */,
 				1DB374AA2260F99100484E4C /* TopRatedRepositories.strings in Resources */,
 				1D68AD2B225F9F9600E65C07 /* Assets.xcassets in Resources */,
+				C8725E282263F24A000C0172 /* topRepositories.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +559,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TopRatedRepositories/Pods-TopRatedRepositories-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B20F349DB9D5AFCA159FE151 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TopRatedRepositoriesTests/Pods-TopRatedRepositoriesTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TopRatedRepositoriesTests/Pods-TopRatedRepositoriesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C91D28B7F4397AA3F589303E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -599,7 +665,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8725E2A2263F493000C0172 /* MockTopRatedRepositoriesInteractor.swift in Sources */,
 				1D68AD39225F9F9600E65C07 /* TopRatedRepositoriesTests.swift in Sources */,
+				C8725E242263EE6C000C0172 /* JsonLoader.swift in Sources */,
+				C8725E212263DD93000C0172 /* TopRatedRepositoriesViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,7 +836,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.bancopan.TopRatedRepositories;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.MSC.TopRatedRepositories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -787,7 +856,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.bancopan.TopRatedRepositories;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.MSC.TopRatedRepositories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
