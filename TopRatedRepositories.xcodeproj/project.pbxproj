@@ -25,7 +25,7 @@
 		1DB37483225FD35700484E4C /* TopRatedRepositoriesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB37482225FD35700484E4C /* TopRatedRepositoriesProvider.swift */; };
 		1DB37499225FD77400484E4C /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB37495225FD77300484E4C /* Repository.swift */; };
 		1DB3749B225FD77400484E4C /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB37497225FD77400484E4C /* Owner.swift */; };
-		1DB3749C225FD77400484E4C /* RootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB37498225FD77400484E4C /* RootClass.swift */; };
+		1DB3749C225FD77400484E4C /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB37498225FD77400484E4C /* Repositories.swift */; };
 		1DB374A12260DC8500484E4C /* ENV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB374A02260DC8500484E4C /* ENV.swift */; };
 		1DB374A32260F56600484E4C /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB374A22260F56600484E4C /* CommonTypes.swift */; };
 		1DB374A62260F5B900484E4C /* ViewControllerBaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB374A52260F5B900484E4C /* ViewControllerBaseProtocol.swift */; };
@@ -79,7 +79,7 @@
 		1DB37482225FD35700484E4C /* TopRatedRepositoriesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedRepositoriesProvider.swift; sourceTree = "<group>"; };
 		1DB37495225FD77300484E4C /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		1DB37497225FD77400484E4C /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
-		1DB37498225FD77400484E4C /* RootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootClass.swift; sourceTree = "<group>"; };
+		1DB37498225FD77400484E4C /* Repositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
 		1DB374A02260DC8500484E4C /* ENV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENV.swift; sourceTree = "<group>"; };
 		1DB374A22260F56600484E4C /* CommonTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTypes.swift; sourceTree = "<group>"; };
 		1DB374A52260F5B900484E4C /* ViewControllerBaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBaseProtocol.swift; sourceTree = "<group>"; };
@@ -272,7 +272,7 @@
 			children = (
 				1DB37495225FD77300484E4C /* Repository.swift */,
 				1DB37497225FD77400484E4C /* Owner.swift */,
-				1DB37498225FD77400484E4C /* RootClass.swift */,
+				1DB37498225FD77400484E4C /* Repositories.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -584,7 +584,7 @@
 				1D68AD5D225FA1A300E65C07 /* TopRatedRepositoriesWorker.swift in Sources */,
 				1D68AD65225FA1EC00E65C07 /* NetworkProvider.swift in Sources */,
 				1D68AD6E225FCB0700E65C07 /* URLRequestProtocol.swift in Sources */,
-				1DB3749C225FD77400484E4C /* RootClass.swift in Sources */,
+				1DB3749C225FD77400484E4C /* Repositories.swift in Sources */,
 				1DB374A12260DC8500484E4C /* ENV.swift in Sources */,
 				1DB374A62260F5B900484E4C /* ViewControllerBaseProtocol.swift in Sources */,
 				1D68AD5F225FA1A300E65C07 /* TopRatedRepositoriesModels.swift in Sources */,

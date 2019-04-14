@@ -6,8 +6,6 @@
 //  Copyright © 2019 MSC. All rights reserved.
 //
 
-//Exibir nome do repo, quantidade de estrelas, foto e nome do autor
-
 import Foundation
 
 struct Repository : Codable {

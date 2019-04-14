@@ -1,7 +1,11 @@
 //
 //  Owner.swift
-//  Model Generated using http://www.jsoncafe.com/ 
-//  Created on April 11, 2019
+//  TopRatedRepositories
+//
+//  Created by Mauro Sasso Coletes on 11/04/19.
+//  Copyright © 2019 MSC. All rights reserved.
+//
+
 
 import Foundation
 
