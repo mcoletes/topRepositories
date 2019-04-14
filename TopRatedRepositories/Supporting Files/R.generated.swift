@@ -16,12 +16,19 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
-  /// This `R.image` struct is generated, and contains static references to 2 images.
+  /// This `R.image` struct is generated, and contains static references to 3 images.
   struct image {
+    /// Image `github_icon`.
+    static let github_icon = Rswift.ImageResource(bundle: R.hostingBundle, name: "github_icon")
     /// Image `stars`.
     static let stars = Rswift.ImageResource(bundle: R.hostingBundle, name: "stars")
     /// Image `userLogo`.
     static let userLogo = Rswift.ImageResource(bundle: R.hostingBundle, name: "userLogo")
+    
+    /// `UIImage(named: "github_icon", bundle: ..., traitCollection: ...)`
+    static func github_icon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.github_icon, compatibleWith: traitCollection)
+    }
     
     /// `UIImage(named: "stars", bundle: ..., traitCollection: ...)`
     static func stars(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
@@ -53,22 +60,22 @@ struct R: Rswift.Validatable {
   struct string {
     /// This `R.string.topRatedRepositories` struct is generated, and contains static references to 6 localization keys.
     struct topRatedRepositories {
-      /// Value: Atenção
-      static let warningTitle = Rswift.StringResource(key: "warningTitle", tableName: "TopRatedRepositories", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: No internet connection
+      static let noInternetConnectionMessage = Rswift.StringResource(key: "noInternetConnectionMessage", tableName: "TopRatedRepositories", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: OK
       static let okActionTitle = Rswift.StringResource(key: "okActionTitle", tableName: "TopRatedRepositories", bundle: R.hostingBundle, locales: [], comment: nil)
-      /// Value: Parece que tivemos um erro!
+      /// Value: Ops
+      static let warningTitle = Rswift.StringResource(key: "warningTitle", tableName: "TopRatedRepositories", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Something went wrong. Please try again!
       static let tryAgainMessage = Rswift.StringResource(key: "tryAgainMessage", tableName: "TopRatedRepositories", bundle: R.hostingBundle, locales: [], comment: nil)
-      /// Value: Tente Novamente
-      static let tryAgainActionTitle = Rswift.StringResource(key: "tryAgainActionTitle", tableName: "TopRatedRepositories", bundle: R.hostingBundle, locales: [], comment: nil)
-      /// Value: Top Repositories
+      /// Value: Top Rated Repositories
       static let topRepositoriesTitle = Rswift.StringResource(key: "topRepositoriesTitle", tableName: "TopRatedRepositories", bundle: R.hostingBundle, locales: [], comment: nil)
-      /// Value: Você está sem internet
-      static let noInternetConnectionMessage = Rswift.StringResource(key: "noInternetConnectionMessage", tableName: "TopRatedRepositories", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Try Again
+      static let tryAgainActionTitle = Rswift.StringResource(key: "tryAgainActionTitle", tableName: "TopRatedRepositories", bundle: R.hostingBundle, locales: [], comment: nil)
       
-      /// Value: Atenção
-      static func warningTitle(_: Void = ()) -> String {
-        return NSLocalizedString("warningTitle", tableName: "TopRatedRepositories", bundle: R.hostingBundle, comment: "")
+      /// Value: No internet connection
+      static func noInternetConnectionMessage(_: Void = ()) -> String {
+        return NSLocalizedString("noInternetConnectionMessage", tableName: "TopRatedRepositories", bundle: R.hostingBundle, comment: "")
       }
       
       /// Value: OK
@@ -76,24 +83,24 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("okActionTitle", tableName: "TopRatedRepositories", bundle: R.hostingBundle, comment: "")
       }
       
-      /// Value: Parece que tivemos um erro!
+      /// Value: Ops
+      static func warningTitle(_: Void = ()) -> String {
+        return NSLocalizedString("warningTitle", tableName: "TopRatedRepositories", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Value: Something went wrong. Please try again!
       static func tryAgainMessage(_: Void = ()) -> String {
         return NSLocalizedString("tryAgainMessage", tableName: "TopRatedRepositories", bundle: R.hostingBundle, comment: "")
       }
       
-      /// Value: Tente Novamente
-      static func tryAgainActionTitle(_: Void = ()) -> String {
-        return NSLocalizedString("tryAgainActionTitle", tableName: "TopRatedRepositories", bundle: R.hostingBundle, comment: "")
-      }
-      
-      /// Value: Top Repositories
+      /// Value: Top Rated Repositories
       static func topRepositoriesTitle(_: Void = ()) -> String {
         return NSLocalizedString("topRepositoriesTitle", tableName: "TopRatedRepositories", bundle: R.hostingBundle, comment: "")
       }
       
-      /// Value: Você está sem internet
-      static func noInternetConnectionMessage(_: Void = ()) -> String {
-        return NSLocalizedString("noInternetConnectionMessage", tableName: "TopRatedRepositories", bundle: R.hostingBundle, comment: "")
+      /// Value: Try Again
+      static func tryAgainActionTitle(_: Void = ()) -> String {
+        return NSLocalizedString("tryAgainActionTitle", tableName: "TopRatedRepositories", bundle: R.hostingBundle, comment: "")
       }
       
       fileprivate init() {}
@@ -132,6 +139,7 @@ struct _R: Rswift.Validatable {
       let name = "LaunchScreen"
       
       static func validate() throws {
+        if UIKit.UIImage(named: "github_icon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'github_icon' is used in storyboard 'LaunchScreen', but couldn't be loaded.") }
         if #available(iOS 11.0, *) {
         }
       }

@@ -6,10 +6,10 @@
   Copyright © 2019 MSC. All rights reserved.
 */
 
-"warningTitle" = "Atenção";
-"noInternetConnectionMessage" = "Você está sem internet";
-"tryAgainMessage" = "Parece que tivemos um erro!";
-"tryAgainActionTitle" = "Tente Novamente";
+"warningTitle" = "Ops";
+"noInternetConnectionMessage" = "No internet connection";
+"tryAgainMessage" = "Something went wrong. Please try again!";
+"tryAgainActionTitle" = "Try Again";
 "okActionTitle" = "OK";
-"topRepositoriesTitle" = "Top Repositories";
+"topRepositoriesTitle" = "Top Rated Repositories";
 
