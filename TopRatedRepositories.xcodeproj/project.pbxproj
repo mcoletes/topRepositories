@@ -33,6 +33,9 @@
 		1DB374BD226128C200484E4C /* ReusableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB374BC226128C200484E4C /* ReusableCells.swift */; };
 		B80F367F0F298D15DF8C42C0 /* Pods_TopRatedRepositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7D866B1BE86FF6A62398F0 /* Pods_TopRatedRepositories.framework */; };
 		BE3BE54E1F9F801A2C4A0420 /* Pods_TopRatedRepositoriesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96D83EC5D66A9A53486030D /* Pods_TopRatedRepositoriesTests.framework */; };
+		C854AC232264046900ED8887 /* TopRatedRepositoriesPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854AC222264046900ED8887 /* TopRatedRepositoriesPresenterSpy.swift */; };
+		C854AC25226404F200ED8887 /* TopRatedRpositoriesWorkerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854AC24226404F200ED8887 /* TopRatedRpositoriesWorkerStub.swift */; };
+		C854AC292264064600ED8887 /* TopRatedRepositoriesInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854AC282264064600ED8887 /* TopRatedRepositoriesInteractorTests.swift */; };
 		C8725E212263DD93000C0172 /* TopRatedRepositoriesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8725E202263DD93000C0172 /* TopRatedRepositoriesViewControllerTests.swift */; };
 		C8725E242263EE6C000C0172 /* JsonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8725E232263EE6C000C0172 /* JsonLoader.swift */; };
 		C8725E282263F24A000C0172 /* topRepositories.json in Resources */ = {isa = PBXBuildFile; fileRef = C8725E262263F010000C0172 /* topRepositories.json */; };
@@ -96,6 +99,9 @@
 		9046AD222C88E807F3F5E30C /* Pods_TopRatedRepositoriesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopRatedRepositoriesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0823303FCF1B78A9DA3AA94 /* Pods-TopRatedRepositoriesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopRatedRepositoriesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TopRatedRepositoriesTests/Pods-TopRatedRepositoriesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC7D866B1BE86FF6A62398F0 /* Pods_TopRatedRepositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopRatedRepositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C854AC222264046900ED8887 /* TopRatedRepositoriesPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedRepositoriesPresenterSpy.swift; sourceTree = "<group>"; };
+		C854AC24226404F200ED8887 /* TopRatedRpositoriesWorkerStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedRpositoriesWorkerStub.swift; sourceTree = "<group>"; };
+		C854AC282264064600ED8887 /* TopRatedRepositoriesInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedRepositoriesInteractorTests.swift; sourceTree = "<group>"; };
 		C8725E202263DD93000C0172 /* TopRatedRepositoriesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedRepositoriesViewControllerTests.swift; sourceTree = "<group>"; };
 		C8725E232263EE6C000C0172 /* JsonLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonLoader.swift; sourceTree = "<group>"; };
 		C8725E262263F010000C0172 /* topRepositories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topRepositories.json; sourceTree = "<group>"; };
@@ -178,7 +184,7 @@
 			children = (
 				C8725E252263F004000C0172 /* Resources */,
 				C8725E222263EE58000C0172 /* Util */,
-				C8725E1F2263DD70000C0172 /* Snapshots Tests */,
+				C8725E2B22640346000C0172 /* TopRatedRepositories */,
 				1D68AD3A225F9F9600E65C07 /* Info.plist */,
 			);
 			path = TopRatedRepositoriesTests;
@@ -354,6 +360,25 @@
 				C8725E262263F010000C0172 /* topRepositories.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C8725E2B22640346000C0172 /* TopRatedRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				C8725E2C2264035F000C0172 /* UnitTests */,
+				C8725E1F2263DD70000C0172 /* Snapshots Tests */,
+			);
+			path = TopRatedRepositories;
+			sourceTree = "<group>";
+		};
+		C8725E2C2264035F000C0172 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				C854AC222264046900ED8887 /* TopRatedRepositoriesPresenterSpy.swift */,
+				C854AC24226404F200ED8887 /* TopRatedRpositoriesWorkerStub.swift */,
+				C854AC282264064600ED8887 /* TopRatedRepositoriesInteractorTests.swift */,
+			);
+			path = UnitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -662,7 +687,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C854AC232264046900ED8887 /* TopRatedRepositoriesPresenterSpy.swift in Sources */,
+				C854AC25226404F200ED8887 /* TopRatedRpositoriesWorkerStub.swift in Sources */,
 				C8725E2A2263F493000C0172 /* MockTopRatedRepositoriesInteractor.swift in Sources */,
+				C854AC292264064600ED8887 /* TopRatedRepositoriesInteractorTests.swift in Sources */,
 				C8725E242263EE6C000C0172 /* JsonLoader.swift in Sources */,
 				C8725E212263DD93000C0172 /* TopRatedRepositoriesViewControllerTests.swift in Sources */,
 			);
