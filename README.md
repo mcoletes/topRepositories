@@ -34,5 +34,6 @@ Portrait and landscape screen orientations are both supported.
 ## Slather
 run this command to execute slather
 
-```slather coverage -s --scheme TopRatedRepositories --workspace TopRatedRepositories.xcworkspace TopRatedRepositories.xcodeproj
+```bash
+slather coverage -s --scheme TopRatedRepositories --workspace TopRatedRepositories.xcworkspace TopRatedRepositories.xcodeproj
 ```
