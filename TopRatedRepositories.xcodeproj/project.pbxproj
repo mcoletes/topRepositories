@@ -37,6 +37,7 @@
 		1DB374C32264D31B00484E4C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB374C22264D31B00484E4C /* Colors.swift */; };
 		1DB374C52264D32400484E4C /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB374C42264D32400484E4C /* Constraints.swift */; };
 		1DB374C72264D65C00484E4C /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB374C62264D65C00484E4C /* Font.swift */; };
+		1DB374C92264F2C500484E4C /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB374C82264F2C400484E4C /* SnapshotHelper.swift */; };
 		484952871111B1AF9F1D6454 /* Pods_TopRatedRepositoriesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EC4BCC657F82393F45EE28 /* Pods_TopRatedRepositoriesTests.framework */; };
 		5930DA26B645881AF7597247 /* libPods-TopRatedRepositoriesUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75AB71C1ACD68AE30FF99C68 /* libPods-TopRatedRepositoriesUITests.a */; };
 		C854AC232264046900ED8887 /* TopRatedRepositoriesPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854AC222264046900ED8887 /* TopRatedRepositoriesPresenterSpy.swift */; };
@@ -98,6 +99,7 @@
 		1DB374C22264D31B00484E4C /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		1DB374C42264D32400484E4C /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		1DB374C62264D65C00484E4C /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		1DB374C82264F2C400484E4C /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		4593C605C4FF917BEE686EC6 /* Pods-TopRatedRepositoriesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopRatedRepositoriesTests.debug.xcconfig"; path = "Target Support Files/Pods-TopRatedRepositoriesTests/Pods-TopRatedRepositoriesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		592FC23755DEAB3086F244E4 /* Pods-TopRatedRepositoriesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopRatedRepositoriesUITests.release.xcconfig"; path = "Target Support Files/Pods-TopRatedRepositoriesUITests/Pods-TopRatedRepositoriesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		75AB71C1ACD68AE30FF99C68 /* libPods-TopRatedRepositoriesUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TopRatedRepositoriesUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +192,7 @@
 		1D68AD42225F9F9600E65C07 /* TopRatedRepositoriesUITests */ = {
 			isa = PBXGroup;
 			children = (
+				1DB374C82264F2C400484E4C /* SnapshotHelper.swift */,
 				1D68AD43225F9F9600E65C07 /* TopRatedRepositoriesUITests.swift */,
 				1D68AD45225F9F9600E65C07 /* Info.plist */,
 			);
@@ -715,6 +718,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D68AD44225F9F9600E65C07 /* TopRatedRepositoriesUITests.swift in Sources */,
+				1DB374C92264F2C500484E4C /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

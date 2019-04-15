@@ -94,31 +94,6 @@ class TopRatedRepositoriesInteractorTests: QuickSpec {
                 expect(interactor.numbeOfRows()).to(equal(30))
                 expect(interactor.currentPage).to(equal(1))
             }
-            
-            
-//            it("should present loading state") {
-//                expect(vc) == snapshot()
-//            }
-//            it("should display no internet message") {
-//                interactor.presenter?.displayError(type: TopRatedRepositoriesModels.errors.noInternet, tryAgainAction: nil)
-//                expect(vc) == snapshot()
-//            }
-//            it("should something went wrong message") {
-//                interactor.presenter?.displayError(type: TopRatedRepositoriesModels.errors.noInternet, tryAgainAction: nil)
-//                expect(vc) == snapshot()
-//            }
-//            it("should display top 30 repositories") {
-//                interactor.fetchRepositories()
-//                expect(interactor.numbeOfRows()).to(equal(30))
-//                expect(interactor.items.first?.name).to(equal("awesome-ios"))
-//                expect(vc) == snapshot()
-//            }
-//            it("should display refresh content") {
-//                vc.handleRefresh(UIRefreshControl())
-//                expect(interactor.numbeOfRows()).to(equal(30))
-//                expect(interactor.items.first?.name).to(equal("awesome-ios"))
-//                expect(vc) == snapshot()
-//            }
         }
     }
 }
