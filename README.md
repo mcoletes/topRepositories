@@ -30,3 +30,9 @@ Minimal supported iOS is 10.0
 This app is universal and applicable for both iPad and iPhone.
 
 Portrait and landscape screen orientations are both supported.
+
+## Slather
+run this command to execute slather
+
+```slather coverage -s --scheme TopRatedRepositories --workspace TopRatedRepositories.xcworkspace TopRatedRepositories.xcodeproj
+```

@@ -33,6 +33,7 @@ class TopRatedRepositoriesViewControllerTests: QuickSpec {
                 interactor = MockTopRatedRepositoriesInteractor()
                 interactor.presenter = presenter
                 vc.interactor = interactor
+                vc.viewDidAppear(true)
             }
             afterEach {
                 vc = nil
@@ -41,14 +42,6 @@ class TopRatedRepositoriesViewControllerTests: QuickSpec {
             }
             
             it("should present loading state") {
-                expect(vc) == snapshot()
-            }
-            it("should display no internet message") {
-                interactor.presenter?.displayError(type: TopRatedRepositoriesModels.errors.noInternet, tryAgainAction: nil)
-                expect(vc) == snapshot()
-            }
-            it("should display something went wrong message") {
-                interactor.presenter?.displayError(type: TopRatedRepositoriesModels.errors.noInternet, tryAgainAction: nil)
                 expect(vc) == snapshot()
             }
             it("should display top 30 repositories") {

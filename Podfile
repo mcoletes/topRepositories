@@ -14,9 +14,7 @@ target 'TopRatedRepositories' do
     pod 'Quick'
     pod 'Nimble-Snapshots'
   end
-  
 end
-
 target 'TopRatedRepositoriesUITests' do
   inherit! :search_paths
 end
