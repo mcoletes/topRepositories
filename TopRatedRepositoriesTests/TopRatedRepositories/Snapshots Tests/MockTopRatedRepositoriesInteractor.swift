@@ -11,7 +11,7 @@
 
 class MockTopRatedRepositoriesInteractor: TopRatedRepositoriesInteractor {
     override func fetchRepositories() {
-        if let repositories: Repositories = JsonLoader.loadFromJsonFile(jsonFileName: "topRepositories"), let items = repositories.items {
+        if let repositories: Repositories = JsonLoader().loadFromJsonFile(jsonFileName: "topRepositories"), let items = repositories.items {
             self.items = items
             presenter?.reloadTable()
         }

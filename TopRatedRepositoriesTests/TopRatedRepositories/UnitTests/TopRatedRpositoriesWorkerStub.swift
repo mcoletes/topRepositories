@@ -20,7 +20,7 @@ class TopRatedRpositoriesWorkerStub: TopRatedRepositoriesWorker {
     override func fetchTopRatedRepositories(request: TopRatedRepositoriesModels.Request, onSuccess: @escaping (Repositories) -> Void, onError: @escaping (ServiceError) -> Void) {
         switch returnTypes {
         case .success:
-            if let repositories: Repositories = JsonLoader.loadFromJsonFile(jsonFileName: "topRepositories"){
+            if let repositories: Repositories = JsonLoader().loadFromJsonFile(jsonFileName: "topRepositories"){
                 onSuccess(repositories)
             }
         case .requestFailed:

@@ -23,11 +23,11 @@ class TopRatedRepositoryTableViewCell: UITableViewCell, ReusableView {
     
     private lazy var nameRepositoryLabel: UILabel = {
        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+        label.font = DefaultFont.large.font
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
         label.sizeToFit()
-        label.textColor = .black
+        label.textColor = PrimaryColors.main.color
         label.sizeToFit()
        return label
     }()
@@ -35,21 +35,21 @@ class TopRatedRepositoryTableViewCell: UITableViewCell, ReusableView {
     private lazy var ownerNameLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
+        label.font =  DefaultFont.medium.font
         label.numberOfLines = 0
         label.sizeToFit()
-        label.textColor = .gray
+        label.textColor = PrimaryColors.light.color
         label.sizeToFit()
         return label
     }()
     
     private lazy var starsRepositoryLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 14, weight: .thin)
+        label.font = DefaultFont.small.font
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
         label.sizeToFit()
-        label.textColor = .darkGray
+        label.textColor = PrimaryColors.dark.color
         label.sizeToFit()
         return label
     }()
@@ -106,16 +106,16 @@ extension TopRatedRepositoryTableViewCell: ConfigureViewsLayoutProtocol {
     }
     
     func configureOwnerPhotoLabelConstraints() {
-        ownerPhoto.topAnchor.constraint(equalTo: topAnchor, constant: 16).isActive = true
-        ownerPhoto.leftAnchor.constraint(equalTo: leftAnchor, constant: 16).isActive = true
+        ownerPhoto.topAnchor.constraint(equalTo: topAnchor, constant: DefaultConstraints.main.spacing).isActive = true
+        ownerPhoto.leftAnchor.constraint(equalTo: leftAnchor, constant: DefaultConstraints.main.spacing).isActive = true
         ownerPhoto.widthAnchor.constraint(equalToConstant: 60).isActive = true
         ownerPhoto.heightAnchor.constraint(equalToConstant: 60).isActive = true
     }
     
     func configureContainerViewConstraints() {
-        containerView.topAnchor.constraint(equalTo: topAnchor, constant: 16).isActive = true
-        containerView.leftAnchor.constraint(equalTo: ownerPhoto.rightAnchor, constant: 16).isActive = true
-        containerView.rightAnchor.constraint(equalTo: rightAnchor, constant: -16).isActive = true
-        containerView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16).isActive = true
+        containerView.topAnchor.constraint(equalTo: topAnchor, constant: DefaultConstraints.main.spacing).isActive = true
+        containerView.leftAnchor.constraint(equalTo: ownerPhoto.rightAnchor, constant: DefaultConstraints.main.spacing).isActive = true
+        containerView.rightAnchor.constraint(equalTo: rightAnchor, constant: -DefaultConstraints.main.spacing).isActive = true
+        containerView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -DefaultConstraints.main.spacing).isActive = true
     }
 }

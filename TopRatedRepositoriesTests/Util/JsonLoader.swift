@@ -9,10 +9,11 @@
 import Foundation
 
 class JsonLoader {
-    static func loadFromJsonFile<T: Decodable>(jsonFileName: String) -> T? {
+    func loadFromJsonFile<T: Decodable>(jsonFileName: String) -> T? {
        // let testBundle = Bundle(for: type(of: self) as! AnyClass)
        // if let path = testBundle.path(forResource: jsonFileName, ofType: "json") {
-         if let path = Bundle.main.path(forResource: jsonFileName, ofType: "json") {
+         let testBundle = Bundle(for: type(of: self))
+         if let path = testBundle.path(forResource: jsonFileName, ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let model = try JSONDecoder().decode(T.self, from: data)
