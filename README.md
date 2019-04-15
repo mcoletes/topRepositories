@@ -31,6 +31,9 @@ This app is universal and applicable for both iPad and iPhone.
 
 Portrait and landscape screen orientations are both supported.
 
+## Tests
+snapshots were taken using iPhone XR simulator
+
 ## Slather
 run this command to execute slather
 
