@@ -47,7 +47,7 @@ class TopRatedRepositoriesViewControllerTests: QuickSpec {
                 interactor.presenter?.displayError(type: TopRatedRepositoriesModels.errors.noInternet, tryAgainAction: nil)
                 expect(vc) == snapshot()
             }
-            it("should something went wrong message") {
+            it("should display something went wrong message") {
                 interactor.presenter?.displayError(type: TopRatedRepositoriesModels.errors.noInternet, tryAgainAction: nil)
                 expect(vc) == snapshot()
             }
