@@ -3,7 +3,7 @@
 //  TopRatedRepositories
 //
 //  Created by Mauro Sasso Coletes on 15/04/19.
-//  Copyright © 2019 Banco Pan S/A. All rights reserved.
+//  Copyright © 2019 MSC. All rights reserved.
 //
 
 import UIKit
